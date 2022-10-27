@@ -19,6 +19,6 @@
   </node>
 
 <node pkg="tf" type="static_transform_publisher" name="laser_basefootprint_broadcaster" args="0.2918 0.0 0.2333 0 0 0  base_footprint  laser 100" />
-<!-- <node pkg="tf" type="static_transform_publisher" name="laser_basefootprint_broadcaster2" args="0.0 0.0 0.0 0 0 0  base_footprint  odom 100" /> -->
+<!--cartographer建图中， 不需要tf树中存在odom， 并且通过cartograpger 还可以生成odom的tf关系 <node pkg="tf" type="static_transform_publisher" name="laser_basefootprint_broadcaster2" args="0.0 0.0 0.0 0 0 0  base_footprint  odom 100" /> -->
 
 </launch>
